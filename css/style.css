@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imagenPlanta img {
+    width: 400px;
+}
+
+.main {
+    margin: 10px;
+}
+
+.body {
+    background-image: linear-gradient(to bottom, black, rgb(122, 122, 122));
+}
+
+.logo {
+    text-align: center;
+    padding: 15px 50px;
+}
+
+
+.logo a {
+
+    color: black;
+}
+
+
+.footer {
+    grid-area: footer;
+}
+
+.imgIndex img {
+    width: 30vw;
+}
+
+.nav {
+    display: flex;
+    background-color: #498492;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    padding: 15px 15px;
+}
+
+.nav a {
+    color: gold;
+
+}
+
+
+.nav img {
+    max-width: 130px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.section {
+    grid-area: section;
+}
+
+.imgIndex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenidoPrincipal {
+    /* background-color: #649389; */
+    color: white;
+
+    text-align: center;
+}
+
+.variedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "mexico colombia"
+        "brasil ethiopia";
+    background-color: #649389;
+    color: white;
+    margin-top: 20px;
+}
+
+.mexico {
+    grid-area: mexico;
+}
+
+.colombia {
+    grid-area: colombia;
+}
+
+.brasil {
+    grid-area: brasil;
+}
+
+.ethiopia {
+    grid-area: ethiopia;
+}
+
+
+.cafeteras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.titulos {
+    color: white;
+    text-align: center;
+}
+
+.procesos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "plantacion cosecha procesamiento curado"
+        "cata tueste molido preparacion";
+    color: white;
+}
+
+/* Inicio de seccion de paises productores  */
+
+.productores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "colombiaprod hondurasprod nicaraguaprod salvadorprod"
+        "vietnamprod brasilprod guatemalaprod indiaprod"
+        "indonesiaprod mexicoprod peruprod costaricaprod";
+}
+
+.colombiaprod {
+    grid-area: colombiaprod;
+}
+
+.hondurasprod {
+    grid-area: hondurasprod;
+}
+
+.nicaraguaprod {
+    grid-area: nicaraguaprod;
+}
+
+.salvadorprod {
+    grid-area: salvadorprod;
+}
+
+.vietnamprod {
+    grid-area: vietnamprod;
+}
+
+.brasilprod {
+    grid-area: brasilprod;
+}
+
+.guatemalaprod {
+    grid-area: guatemalaprod;
+}
+
+.indiaprod {
+    grid-area: indiaprod;
+}
+
+.indonesiaprod {
+    grid-area: indonesiaprod;
+}
+
+.mexicoprod {
+    grid-area: mexicoprod;
+}
+
+.peruprod {
+    grid-area: peruprod;
+}
+
+.costaricaprod {
+    grid-area: costaricaprod;
+}
+
+
+/* Fin seccion de paises productores */
+
+.plantacion {
+    grid-area: plantacion;
+}
+
+.cosecha {
+    grid-area: cosecha;
+}
+
+.procesamiento {
+    grid-area: procesamiento;
+}
+
+.curado {
+    grid-area: curado;
+}
+
+.cata {
+    grid-area: cata;
+}
+
+.tueste {
+    grid-area: tueste;
+}
+
+.molido {
+    grid-area: molido;
+}
+
+.preparacion {
+    grid-area: preparacion;
+}
+
+/* .flexProcesos {
+    max-width: 850px;
+}
+
+.plantacion,
+.cosecha,
+.procesamiento,
+.curado,
+.cata,
+.tueste,
+.molido,
+.preparacion {
+    display: inline-block;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.imgPlantacion,
+.imgCosecha,
+.imgProcesamiento,
+.imgCurado,
+.imgCata,
+.imgTueste,
+.imgMolido,
+.imgPreparacion {
+    display: inline-block;
+    margin: 10ps auto;
+}
+
+.imgPlantacion img,
+.imgCosecha img,
+.imgProcesamiento img,
+.imgCurado img,
+.imgCata img,
+.imgTueste img,
+.imgMolido img,
+.imgPreparacion img {
+    max-width: 425px;
+    display: inline-block;
+    margin: 10px auto;
+} */
+
+.cafeteras img {
+    position: relative;
+    float: left;
+}
+
+
+.cafeto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.cafeto img {
+    max-width: 60%;
+}
+
+
+
+.variedades div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.variedades img {
+    max-width: 40vw;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.form {
+    width: 200px;
+
+}
+
+.form:focus {
+    width: 220px;
+    transition: 1s;
+}
+
+.tituloIndex {
+    text-align: center;
+    color: white;
+}
+
+.tituloVariedades {
+    text-align: center;
+    color: #3B62B1;
+}
+
+.cafeteras p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+@keyframes logoAnimado {}
+
+@media (max-width: 768px) {
+    .variedades {
+        background-color: #649389;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mexico"
+            "brasil"
+            "colombia"
+            "ethiopia";
+        justify-items: center;
+        padding: 10px;
+
+    }
+
+    .cafeteras {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        background-color: #649389;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .procesos {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr; */
+        /* grid-template-areas:
+            "plantacion"
+            "cosecha" 
+            "procesamiento" 
+            "curado"
+            "cata"
+            "tueste" 
+            "molido"
+            "preparacion"; */
+        color: white;
+        text-align: center;
+    }
+
+    .nav li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav a {
+        display: flex;
+        flex-wrap: wrap;
+        color: gold;
+        text-decoration: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        color: gold;
+
+    }
+
+    h1 {
+        display: none;
+    }
+}
